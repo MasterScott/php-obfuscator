@@ -1,7 +1,5 @@
 <?php
-/**
-InsideHeartz
-**/
+/**InsideHeartz **/
 error_reporting(0);
 // Warna Terminl
 $biru = "\e[34m";
