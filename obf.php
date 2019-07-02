@@ -55,7 +55,7 @@ function obfuscate($text)
 	$var = RandomString();
 	$var2 = RandomString();
 
-	$res = str_rot13(base64_encode($text));
+	$res = ucwords(base64_encode($text));
 
 	$content='$'.$var.'="\x73\x74\x72\x5f\x72\x6f\x74\x31\x33";$'.$var2.'="\x62\x61\x73\x65\x36\x34\x5f\x64\x65\x63\x6f\x64\x65";@eval($'.$var2.'($'.$var.'("'.$res.'")));';
 	$hex=strToHex($content);
