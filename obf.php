@@ -68,7 +68,7 @@ function create_result($result,$output)
 	$content ='<?php 
 /* Obfuscate By InsideHeartz 
 */
-/* https://insideheartz.kd */ ';
+/* https://insideheartz.id */ ';
 	$result = strToHex($result);
 	$content.= '$'.$var.'="'.$result.'";@eval($'.$var.'); ?>';
 	return file_put_contents($output,$content);
